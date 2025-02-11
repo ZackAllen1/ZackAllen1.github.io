@@ -1,0 +1,24 @@
+.resumeContainer {
+    /* border: solid 1px cyan; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumeInnerContainer {
+    min-width: 250px;
+    width: 60%;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        width: 100%;
+    }
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 80%;
+    }
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        width: 80%;
+    }
+}

@@ -1,0 +1,34 @@
+.workExpItem {
+    /* background-color: var(--mantine-color-blue-light-hover); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: start;
+}
+
+.companyImage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 75px;
+    height: 100%;
+}
+
+.workExpInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.workExpInfoUpper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        width: 40%;
+        min-width: 200px;
+    }
+
+}

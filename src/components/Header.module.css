@@ -1,0 +1,72 @@
+.headerContainer {
+    border-bottom: solid lightgray 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+}
+
+.pageLinks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: solid 1px cyan; */
+    font-weight: 100;
+    color: red;
+    /* opacity: 0.8; */
+    flex-grow: 1;
+    flex-basis: 0;
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        display: none;
+    }
+}
+
+.pageLinkText {
+    font-weight: 700;
+    font-size: 16px;
+    color: #141414;
+
+    @mixin dark {
+        color: var(--mantine-color-text);
+    }
+}
+
+.pageLinkText.active {
+    color: red;
+    background-color: green;
+    border: solid pink 3px;
+}
+
+.pageMenu {
+    margin-right: var(--mantine-spacing-md);
+    /* border: solid 1px cyan; */
+
+    @media (min-width: $mantine-breakpoint-lg) {
+        display: none;
+    }
+}
+
+.nameTitle {
+    /* border: solid 1px cyan; */
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.socialIcon {
+    color: black;
+
+    @mixin dark {
+        color: var(--mantine-color-text);
+    }
+}

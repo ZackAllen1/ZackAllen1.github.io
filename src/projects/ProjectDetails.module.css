@@ -1,0 +1,57 @@
+.backButton {
+    color: var(--mantine-color-text);
+    height: 30px;
+}
+
+.projectContainer {
+    /* border: solid 1px cyan; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.projectDetailsContainer {
+    width: 65%;
+    /* border: solid 1px green; */
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        width: 90%;
+    }
+}
+
+.sbsImgContainer {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.sbsImg {
+    width: 50%;
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        width: 75%;
+    }
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 90%;
+    }
+}
+
+.mainImg {
+    width: 75%;
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        width: 75%;
+    }
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 90%;
+    }
+}

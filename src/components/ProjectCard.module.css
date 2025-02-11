@@ -1,0 +1,18 @@
+.cardContainer {
+    height: 100%;
+    color: var(--mantine-color-text);
+}
+
+.cardHeaderInfo {
+    flex-wrap: wrap-reverse;
+}
+
+.projectTitle {
+    @media (max-width: $mantine-breakpoint-xs) {
+        width: 100%;
+    }
+}
+
+.cardDescription {
+    min-height: 75px;
+}

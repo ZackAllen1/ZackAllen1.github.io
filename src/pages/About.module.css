@@ -1,0 +1,25 @@
+.aboutContainer {
+    /* border: solid 1px cyan; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.workExpContainer {
+    width: 65%;
+    /* border: solid 1px green; */
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        width: 90%;
+    }
+}
+
+.abMeContainer {
+    width: 100%;
+}
+
+.profilePic {
+    width: 100%;
+}
