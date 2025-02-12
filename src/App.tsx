@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 
-import { createTheme, CSSVariablesResolver, MantineProvider, virtualColor } from '@mantine/core';
+import { createTheme, CSSVariablesResolver, MantineProvider } from '@mantine/core';
 import { Routes, Route } from 'react-router';
 import { MathJaxContext } from 'better-react-mathjax';
 

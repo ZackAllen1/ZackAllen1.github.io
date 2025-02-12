@@ -22,3 +22,9 @@
         width: 80%;
     }
 }
+
+.resumeRender {
+    @media (max-width: $mantine-breakpoint-sm) {
+        display: none;
+    }
+}

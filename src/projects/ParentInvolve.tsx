@@ -6,7 +6,6 @@ import { IconArrowLeft, IconInfoCircle } from '@tabler/icons-react';
 import ExternalLink from '../components/ExternalLink';
 
 import header from '../assets/proj-imgs/parentinvolve/header.jpg';
-import parentImg from '../assets/proj-imgs/parentinvolve/parentInvolvement.png';
 import fig1 from '../assets/proj-imgs/parentinvolve/fig1.png';
 import table1 from '../assets/proj-imgs/parentinvolve/table1.png';
 import report from '../assets/proj-docs/parentinvolve/Fall_2022_USCLAP_Report.pdf';

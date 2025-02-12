@@ -1,5 +1,5 @@
-import { Menu, Button, rem, Burger } from "@mantine/core";
-import { IconMenu2, IconUser, IconChartBar, IconSchool, IconFileCv } from "@tabler/icons-react";
+import { Menu, rem, Burger } from "@mantine/core";
+import { IconUser, IconChartBar, IconSchool } from "@tabler/icons-react";
 import { SiReaddotcv } from "react-icons/si";
 import { NavLink } from "react-router";
 import { useDisclosure } from '@mantine/hooks';

@@ -1,7 +1,6 @@
-import { Card, Image, Text, Badge, Button, Group, Grid, Divider } from '@mantine/core';
+import { Card, Image, Text, Badge, Group, Grid, Divider } from '@mantine/core';
 import classes from './ProjectCard.module.css';
-import { useEffect } from 'react';
-import { Link, NavLink } from 'react-router';
+import { Link } from 'react-router';
 
 interface ProjectCardProps {
     size: string;

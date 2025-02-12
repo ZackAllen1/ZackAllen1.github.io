@@ -1,7 +1,4 @@
 import classes from './Resume.module.css';
-import { Button } from '@mantine/core';
-import { IconFileTypePdf } from '@tabler/icons-react';
-
 import resume_new from '../assets/resume_website.pdf'
 import ExternalLink from '../components/ExternalLink';
 
@@ -26,7 +23,7 @@ function Resume() {
                     />
 
                 </div>
-                <div >
+                <div className={classes.resumeRender}>
                     <object name="test" data={resume_new} type="application/pdf" width="100%" height="1150px">
                         <p>Resume PDF did not render, click<a href={resume_new}>here</a> to open</p>
                     </object>

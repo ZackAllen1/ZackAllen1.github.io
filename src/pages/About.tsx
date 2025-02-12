@@ -1,5 +1,6 @@
-import { Grid, Group, Text } from '@mantine/core';
-import { IconBrandSnowflake, IconBrandDatabricks, IconChartBarPopular, IconFileTypeXls, IconBrandPython, IconDatabase, IconBrandTypescript, IconBrandReact, IconBrandCpp } from '@tabler/icons-react'
+import { Grid, Group, Text, useMantineColorScheme } from '@mantine/core';
+import { Link } from 'react-router';
+import { IconBrandSnowflake, IconBrandDatabricks, IconChartBarPopular, IconFileTypeXls, IconDatabase, IconBrandTypescript, IconBrandReact } from '@tabler/icons-react'
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiApachespark, SiTableau } from "react-icons/si";
 import SkillBadge from '../components/SkillBadge';
@@ -8,7 +9,7 @@ import abtlogo from '../assets/job-imgs/abt_logo.png'
 import uflogo from '../assets/job-imgs/uf_logo.png'
 import jnjlogo from '../assets/job-imgs/jnj_logo.png'
 import sdslogo from '../assets/job-imgs/totalsds_logo.jpg'
-import gtlogo from '../assets/job-imgs/gt_logo.svg'
+import gtlogo from '../assets/job-imgs/gt_logo.png'
 import WorkExpItem from '../components/WorkExpItem';
 import profile from '../assets/profile.png';
 
@@ -16,7 +17,7 @@ import classes from './About.module.css';
 
 
 function About() {
-
+    const { colorScheme } = useMantineColorScheme();
     return (
         <div className={classes.aboutContainer}>
             <div className={classes.workExpContainer}>
@@ -41,9 +42,9 @@ function About() {
                                 gradient={{ from: 'blue', to: 'cyan' }}
                                 className={classes.shiningText}
                             >
-                                <a href="/projects">
+                                <Link to="/projects">
                                     <b>Projects</b>
-                                </a>
+                                </Link>
                             </Text>,&nbsp;
 
                             <Text
@@ -54,9 +55,9 @@ function About() {
                                 gradient={{ from: 'blue', to: 'cyan' }}
                                 className={classes.shiningText}
                             >
-                                <a href="/coursework">
+                                <Link to="/coursework">
                                     <b>Coursework</b>
-                                </a>
+                                </Link>
                             </Text>, and&nbsp;
 
                             <Text
@@ -66,9 +67,9 @@ function About() {
                                 variant="gradient"
                                 gradient={{ from: 'blue', to: 'cyan' }}
                             >
-                                <a href="/resume">
+                                <Link to="/resume">
                                     <b>Resume</b>
-                                </a>
+                                </Link>
                             </Text> — feel free to explore and connect!
                         </Grid.Col>
                     </Grid>
@@ -119,12 +120,12 @@ function About() {
 
                 <h3>🤖 Data Science & Machine Learning</h3>
                 <Group gap={4}>
-                    <SkillBadge name="NumPy" color="#352364" />
-                    <SkillBadge name="Pandas" color="#150458" />
+                    <SkillBadge name="NumPy" color="#4B8BBE" />
+                    <SkillBadge name="Pandas" color={colorScheme == "dark" ? "#E70488" : "#150458"} />
                     <SkillBadge name="TensorFlow" color="#FFA800" />
                     <SkillBadge name="scikit-learn" color="#9B4600" />
                     <SkillBadge name="Matplotlib" color="#A762B3" />
-                    <SkillBadge name="Plotly Dash" color="black" />
+                    <SkillBadge name="Plotly Dash" color={colorScheme == "dark" ? "white" : "black"} />
                     <SkillBadge name="Streamlit" color="red" />
                     <SkillBadge name="Optuna" color="blue" />
                     <SkillBadge name="Hugging Face" color="yellow" />
@@ -147,8 +148,8 @@ function About() {
                 <Group gap={4}>
                     <SkillBadge name="Jupyter Notebook" color="orange" />
                     <SkillBadge name="Docker" color="#1D63ED" />
-                    <SkillBadge name="GitHub/Git" color="black" />
-                    <SkillBadge name="LaTeX" color="black" />
+                    <SkillBadge name="GitHub/Git" color={colorScheme == "dark" ? "white" : "black"} />
+                    <SkillBadge name="LaTeX" color={colorScheme == "dark" ? "white" : "black"} />
                     <SkillBadge name="PowerPoint" color="#D35230" />
                 </Group>
             </div>
