@@ -3,6 +3,16 @@
     color: var(--mantine-color-text);
 }
 
+.cardContainer:hover {
+    @mixin light {
+        opacity: 0.85;
+    }
+
+    @mixin dark {
+        filter: brightness(85%);
+    }
+}
+
 .cardHeaderInfo {
     flex-wrap: wrap-reverse;
 }

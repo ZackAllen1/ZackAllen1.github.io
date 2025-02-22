@@ -140,7 +140,7 @@ function About() {
                     <SkillBadge name="Snowflake" color="#00A1D9" icon={<IconBrandSnowflake />} />
                     <SkillBadge name="PowerBI" color="#D8B04A" icon={<IconChartBarPopular />} />
                     <SkillBadge name="Tableau" color="#CA1E32" icon={<SiTableau size={20} />} />
-                    <SkillBadge name="Power Autosmate" color="blue" icon={<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Microsoft_Power_Automate.svg" width={24} height={24} />} />
+                    <SkillBadge name="Power Automate" color="blue" icon={<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Microsoft_Power_Automate.svg" width={24} height={24} />} />
                     <SkillBadge name="Excel" color="#1D6F42" icon={<IconFileTypeXls />} />
                 </Group>
 
