@@ -66,25 +66,25 @@ function Maistro() {
                         url={"https://youtu.be/GkK-3merrWo"}
                         iconName='video'
                         description='Demo/Presentation'
-                        color="maistro"
+                        color="#7aa26b"
                     />
                     <ExternalLink
                         url={poster}
                         iconName='presentation'
                         description='Poster'
-                        color="maistro"
+                        color="#7aa26b"
                     />
                     <ExternalLink
                         url={"https://github.com/harrisonstark/maistro-frontend"}
                         iconName='github'
                         description='Frontend Repo'
-                        color="maistro"
+                        color="#7aa26b"
                     />
                     <ExternalLink
                         url={"https://github.com/harrisonstark/maistro-backend"}
                         iconName='github'
                         description='Backend Repo'
-                        color="maistro"
+                        color="#7aa26b"
                     />
                 </Group>
 

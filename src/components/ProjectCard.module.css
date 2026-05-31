@@ -1,6 +1,8 @@
 .cardContainer {
     height: 100%;
     color: var(--mantine-color-text);
+    display: flex;
+    flex-direction: column;
 }
 
 .cardContainer:hover {
@@ -25,4 +27,8 @@
 
 .cardDescription {
     min-height: 75px;
+}
+
+.tagContainer {
+    margin-top: auto;
 }

@@ -2,10 +2,14 @@ import classes from './Projects.module.css';
 import ProjectCard from "../components/ProjectCard";
 import { Grid } from "@mantine/core";
 
+import superCDMSLogo from '../assets/proj-imgs/superCDMS/superCDMSLogo.png'
+import entityResolutionLogo from '../assets/proj-imgs/entityResolution/entityResolutionLogo.png'
+import balatroLogo from '../assets/proj-imgs/balatro/balatro.jpg'
+import bdchLogo from '../assets/proj-imgs/bdch/bdch.png';
 import maistroLogo from '../assets/proj-imgs/maistro/maistro.png';
 import examprefLogo from '../assets/proj-imgs/exampref/exams.jpg';
 import pitchpredLogo from '../assets/proj-imgs/pitchpred/astros.png';
-import parentLogo from '../assets/proj-imgs/parentinvolve/parentInvolvement.png';
+import parentLogo from '../assets/proj-imgs/parentinvolve/parentInvolveLogo.jpg';
 import mkpisLogo from '../assets/proj-imgs/mkpis/mkpis.png';
 import transitLogo from '../assets/proj-imgs/transit/bus.png';
 
@@ -14,8 +18,56 @@ function Projects() {
         <div className={classes.projectContainer}>
             <div className={classes.projectCardContainer}>
                 <h1>Projects</h1>
-
                 <Grid className={classes.gridRow}>
+                    <ProjectCard
+                        size={"sm"}
+                        image={superCDMSLogo}
+                        title={"SuperCDMS ML/DL Techniques"}
+                        url={"supercdms"}
+                        period={"Spring 2026"}
+                        description={"Using ML/DL to accurately reconstruct interaction locations of Weakly Interacting Massive Particles (WIMPs) in the Super Cryogenic Dark Matter Search (SuperCDMS) experiment."}
+                        badges={[{ label: "PYTHON" }, { label: "DEEP LEARNING" }, { label: "PHYSICS" }]}
+                    />
+                    <ProjectCard
+                        size={"sm"}
+                        image={entityResolutionLogo}
+                        title={"Evaluating Entity Resolution Methods"}
+                        url={"entity-resolution-patient-records"}
+                        period={"Fall 2025"}
+                        description={"Evaluting three different entity resolution methods on 150,000+ synthetic patient records created with SyntheticMass."}
+                        badges={[{ label: "RECORD LINKAGE" }, { label: "PYTHON" }, { label: "COMPUTATIONAL DATA ANALYTICS" }]}
+                    />
+                </Grid>
+                <Grid className={classes.gridRow}>
+                    {/* <ProjectCard
+                        size={"sm"}
+                        image={webpLogo}
+                        title={"React Web Portfolio 2.0"}
+                        url={"react-web-portfolio"}
+                        period={"Spring 2025"}
+                        description={"What you're looking at! Refreshed web portfolio using React, TypeScript, Vite, and Mantine Components. Now publicly available!"}
+                        badges={[{ label: "WEB PORTFOLIO" }, { label: "REACT" }, { label: "TYPESCRIPT" }]}
+                    /> */}
+                    <ProjectCard
+                        size={"sm"}
+                        image={balatroLogo}
+                        title={"Balatro Starting Strategy Simulation"}
+                        url={"balatro-simulation"}
+                        period={"Summer 2025"}
+                        description={"Determining which of eight different Balatro starting strategies can survive the longest across various difficulties with SimPy."}
+                        badges={[{ label: "PYTHON" }, { label: "SIMULATION" }, { label: "SIMPY" }]}
+                    />
+                    <ProjectCard
+                        size={"sm"}
+                        image={bdchLogo}
+                        title={"Talk: Big Data Challenges in Healthcare"}
+                        url={"big-data-challenges-healthcare"}
+                        period={"Fall 2024"}
+                        description={"Talk to University of Florida Data Science, Statistics, and Actuarial Clubs on Big Data Challenges in Healthcare with a project deep-dive on using GLMMs to evaluate home-health providers."}
+                        badges={[{ label: "PRESENTATION" }, { label: "DATABRICKS" }, { label: "GLMM" }, { label: "JULIA" }]}
+                    />
+                </Grid>
+                {/* <Grid className={classes.gridRow}>
                     <ProjectCard
                         size={"lg"}
                         image={maistroLogo}
@@ -23,9 +75,19 @@ function Projects() {
                         url={"maistro"}
                         period={"Fall 2023"}
                         description={"Full-stack application employing NLP techniques to interpret user-conversations and recommend songs based on current mood or activities with Spotify's Recommendation API. Completed as part of Fall 2023 Senior Design Project."}
-                        badges={[{ label: "NLP" }, { label: "GROUP PROJECT" }, { label: "SENIOR DESIGN" }]} />
-                </Grid>
+                        badges={[{ label: "NLP" }, { label: "GROUP PROJECT" }, { label: "SENIOR DESIGN" }]}
+                    />
+                </Grid> */}
                 <Grid className={classes.gridRow}>
+                    <ProjectCard
+                        size={"sm"}
+                        image={maistroLogo}
+                        title={"MAISTRO"}
+                        url={"maistro"}
+                        period={"Fall 2023"}
+                        description={"Full-stack application employing NLP techniques to interpret user-conversations and recommend songs based on current mood or activities with Spotify's Recommendation API. Completed as part of Fall 2023 Senior Design Project."}
+                        badges={[{ label: "NLP" }, { label: "GROUP PROJECT" }, { label: "SENIOR DESIGN" }]}
+                    />
                     <ProjectCard
                         size={"sm"}
                         image={examprefLogo}
@@ -35,6 +97,17 @@ function Projects() {
                         description={"Analyzing college student preferences for courses based on exam formats and scores using techniques learned in an Experimental Design Course."}
                         badges={[{ label: "EXPERIMENT DESIGN" }, { label: "STATISTICAL ANALYSIS" }]}
                     />
+                    {/* <ProjectCard
+                        size={"sm"}
+                        image={pitchpredLogo}
+                        title={"Pitch Type Prediction"}
+                        url={"pitch-prediction"}
+                        period={"Fall 2023"}
+                        description={"Analysis of Binary Classifiers that predict an upcoming pitch type based on game state and are fit to individual pitcher data."}
+                        badges={[{ label: "STATISTICAL LEARNING" }, { label: "NAIVE BAYES" }, { label: "BOOSTING TREES" }]}
+                    /> */}
+                </Grid>
+                <Grid className={classes.gridRow}>
                     <ProjectCard
                         size={"sm"}
                         image={pitchpredLogo}
@@ -44,18 +117,14 @@ function Projects() {
                         description={"Analysis of Binary Classifiers that predict an upcoming pitch type based on game state and are fit to individual pitcher data."}
                         badges={[{ label: "STATISTICAL LEARNING" }, { label: "NAIVE BAYES" }, { label: "BOOSTING TREES" }]}
                     />
-                </Grid>
-                <Grid className={classes.gridRow}>
                     <ProjectCard
-                        size={"lg"}
+                        size={"sm"}
                         image={parentLogo}
-                        title={"Statistical Analysis of Parent Involvement and Child Academic Achievement"}
+                        title={"Parent Involvement Impact Analysis"}
                         url={"parent-involvement"}
                         period={"Fall 2022"}
                         description={`Semester long group project to analyze how different parent involvement types impact student
-                                        grades across various school levels, geographic locations, and community demographics. Final report submitted
-                                        to Consortium for the Advancement of Undergraduate Statistics Education (CAUSE) for their Undergraduate
-                                        Statistics Class Project (USCLAP) Competition.`}
+                                        grades across various school levels, geographic locations, and community demographics. `}
                         badges={[{ label: "GROUP PROJECT" }]} />
                 </Grid>
                 <Grid className={classes.gridRow}>

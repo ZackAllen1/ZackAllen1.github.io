@@ -52,16 +52,15 @@ function ProjectCard({ size, image, title, url, period, description, badges }: P
                         {description}
                     </Text>
 
-
-                    <Divider my="xs" />
-
-
-                    <Text c="dimmed" size='xs'>
-                        <b>TAGS</b>
-                    </Text>
-                    <Group gap={7} mt={5}>
-                        {features}
-                    </Group>
+                    <div className={classes.tagContainer}>
+                        <Divider my="xs" />
+                        <Text c="dimmed" size='xs'>
+                            <b>TAGS</b>
+                        </Text>
+                        <Group gap={7} mt={5}>
+                            {features}
+                        </Group>
+                    </div>
 
                 </Card>
             </Link>

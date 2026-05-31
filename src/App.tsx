@@ -10,6 +10,10 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Coursework from './pages/Coursework';
 
+import SuperCDMS from './projects/SuperCDMS';
+import EntityResolution from './projects/EntityResolution';
+import Balatro from './projects/Balatro';
+import BDCH from './projects/BDCH';
 import Maistro from './projects/Maistro';
 import ExamPref from './projects/ExamPref';
 import PitchPred from './projects/PitchPred';
@@ -18,22 +22,9 @@ import Mkpis from './projects/Mkpis';
 import Transit from './projects/Transit';
 import Resume from './pages/Resume';
 
-const theme = createTheme({
-  colors: {
-    'maistro': [
-      "#f3f7f2",
-      "#e7ece5",
-      "#cbd8c6",
-      "#adc4a5",
-      "#93b288",
-      "#82a775",
-      "#7aa26b",
-      "#678d5a",
-      "#5b7e4f",
-      "#4c6d40"
-    ],
-  },
-});
+
+
+const theme = createTheme({});
 
 const resolver: CSSVariablesResolver = (theme) => ({
   variables: {},
@@ -47,12 +38,16 @@ function App() {
 
   return (
     <MathJaxContext>
-      <MantineProvider defaultColorScheme='auto' theme={theme} cssVariablesResolver={resolver}>
+      <MantineProvider defaultColorScheme='light' theme={theme} cssVariablesResolver={resolver}>
         <Header />
         <Routes>
           <Route index element={<About />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="/projects/supercdms" element={<SuperCDMS />} />
+          <Route path="/projects/entity-resolution-patient-records" element={<EntityResolution />} />
+          <Route path="/projects/balatro-simulation" element={<Balatro />} />
+          <Route path="/projects/big-data-challenges-healthcare" element={<BDCH />} />
           <Route path="/projects/maistro" element={<Maistro />} />
           <Route path="/projects/exam-preferences" element={<ExamPref />} />
           <Route path="/projects/pitch-prediction" element={<PitchPred />} />

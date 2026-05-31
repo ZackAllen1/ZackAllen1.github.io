@@ -11,7 +11,7 @@ function Resume() {
         <div className={classes.resumeContainer}>
             <div className={classes.resumeInnerContainer}>
                 <h1>Resume</h1>
-                <h3>Last Updated: February 2025</h3>
+                <h3>Last Updated: May 2026</h3>
                 <div style={{ marginBottom: "20px" }}>
 
 

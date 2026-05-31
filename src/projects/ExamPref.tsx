@@ -172,7 +172,7 @@ function ExamPref() {
 
                 <h3>
                     <MathJax>
-                        {`\\begin{align*} Y_{ijk} = &\\mu_{\\bullet\\bullet} + \alpha_1 X_{ijk1} + \\beta_1 X_{ijk2} + \\beta_2 X_{ijk3} + \\beta_{3} X_{ijk,4}\\\\
+                        {`\\begin{align*} Y_{ijk} = &\\mu_{\\bullet\\bullet} + \\alpha_1 X_{ijk1} + \\beta_1 X_{ijk2} + \\beta_2 X_{ijk3} + \\beta_{3} X_{ijk,4}\\\\
                          &+ (\\alpha\\beta)_{11} X_{ijk1} X_{ijk2} + (\\alpha\\beta)_{12} X_{ijk1} X_{ijk3} + (\\alpha\\beta)_{13} X_{ijk1} X_{ijk4} + \\epsilon_{ijk} \\end{align*}`}
                     </MathJax>
                 </h3>

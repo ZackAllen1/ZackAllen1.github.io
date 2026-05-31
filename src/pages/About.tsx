@@ -5,6 +5,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { SiApachespark, SiTableau } from "react-icons/si";
 import SkillBadge from '../components/SkillBadge';
 
+import signatureLogo from '../assets/job-imgs/signature_logo.jpg'
 import abtlogo from '../assets/job-imgs/abt_logo.png'
 import uflogo from '../assets/job-imgs/uf_logo.png'
 import jnjlogo from '../assets/job-imgs/jnj_logo.png'
@@ -28,9 +29,9 @@ function About() {
                             <img src={profile} alt="Profile Picture" className={classes.profilePic} />
                         </Grid.Col>
                         <Grid.Col span={{ base: 12, lg: 6 }} style={{ fontSize: "16px", fontFamily: "Verdana, Geneva, Tahoma, sans-serif" }}>
-                            Current Data Scientist 1 at Abt Global and a Master's Student in Analytics at the Georgia Institute of Technology.
-                            My work primarily focuses on applying data-driven solutions in the healthcare and environmental sectors, leveraging machine learning,
-                            statistical modeling, and big data techniques to drive meaningful insights.
+                            Current Data Scientist at Signature Aviation and a Master's Student in Analytics at the Georgia Institute of Technology.
+                            {/* My work primarily focuses on applying data-driven solutions in the healthcare and environmental sectors, leveraging machine learning,
+                            statistical modeling, and big data techniques to drive meaningful insights. */}
                             <br /><br />
                             Here you'll find my&nbsp;
 
@@ -76,10 +77,17 @@ function About() {
                 </div>
                 <h1>Work Experience</h1>
                 <WorkExpItem
-                    company={"Abt Global"}
-                    title={"Data Scientist 1"}
-                    startDate={"Mar. '24"}
+                    company={"Signature Aviation"}
+                    title={"Data Scientist"}
+                    startDate={"June '26"}
                     endDate={"Present"}
+                    logo={signatureLogo} logoH={45} logoW={45}
+                />
+                <WorkExpItem
+                    company={"Abt Global"}
+                    title={"Data Scientist"}
+                    startDate={"Mar. '24"}
+                    endDate={"May '26"}
                     logo={abtlogo} logoH={45} logoW={45}
                 />
                 <WorkExpItem
@@ -158,6 +166,7 @@ function About() {
                 <WorkExpItem
                     company={"Georgia Institute of Technology"}
                     title={"Masters in Analytics (C-Track)"}
+                    lowerText='Current GPA: 4.0/4.0'
                     startDate={"Jan. '25"}
                     endDate={"Present"}
                     logo={gtlogo} logoH={30} logoW={45}

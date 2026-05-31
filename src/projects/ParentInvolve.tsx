@@ -5,7 +5,7 @@ import { Blockquote, Button, Group } from '@mantine/core';
 import { IconArrowLeft, IconInfoCircle } from '@tabler/icons-react';
 import ExternalLink from '../components/ExternalLink';
 
-import header from '../assets/proj-imgs/parentinvolve/header.jpg';
+import header from '../assets/proj-imgs/parentinvolve/parentInvolveLogo.jpg';
 import fig1 from '../assets/proj-imgs/parentinvolve/fig1.png';
 import table1 from '../assets/proj-imgs/parentinvolve/table1.png';
 import report from '../assets/proj-docs/parentinvolve/Fall_2022_USCLAP_Report.pdf';
@@ -30,7 +30,7 @@ function ParentInvolve() {
                     </Button>
                 </NavLink>
 
-                <h1>Analysis of Student Exam Preferences Under Various Conditions</h1>
+                <h1>Statistical Analysis of Parent Involvement and Child Academic Achievement</h1>
 
 
                 <img src={header} alt="header banner" width="75%" />

@@ -26,8 +26,8 @@ function Coursework() {
                         <Accordion.Control>
                             <h2>Graduate Coursework</h2>
                             <Progress.Root size={22} radius={5}>
-                                <Progress.Section value={8} color="#B3A369">
-                                    <Progress.Label>0%</Progress.Label>
+                                <Progress.Section value={54} color="#B3A369">
+                                    <Progress.Label>54%</Progress.Label>
                                 </Progress.Section>
                             </Progress.Root>
                         </Accordion.Control>
@@ -39,18 +39,55 @@ function Coursework() {
                                         <u><b>Georgia Institute of Technology</b></u><br />
                                         <b>Degree: </b> M.S. in Analytics<br />
                                         <b>Concentration: </b> Computational Data Analytics (C-Track)<br />
-                                        <b>GPA: </b> TBD<br />
-                                        <b>Start Date: </b> January 2025
+                                        <b>GPA: </b> 4.0/4.0<br />
+                                        <b>Expected Graduation: </b> Fall 2027
                                     </p>
-                                    <Timeline color="#B3A369" active={1} bulletSize={24} lineWidth={3} reverseActive>
-                                        <Timeline.Item title="Summer 2025">
+                                    <Timeline color="#B3A369" active={3} bulletSize={24} lineWidth={3} reverseActive>
+                                        {/* <Timeline.Item title="Fall 2027 🎓">
                                             <List>
-                                                <List.Item icon={<Title order={3} style={{ paddingBottom: "5px" }}>💼</Title>}><b>MGT 8803</b> Business Fundamentals for Analytics </List.Item>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>CSE 6250</b> Big Data Analytics for Healthcare</List.Item>
                                             </List>
                                         </Timeline.Item>
-                                        <Timeline.Item title="Spring 2025" bullet={<IconArrowRight />}>
+                                        <Timeline.Item title="Summer 2027">
                                             <List>
-                                                <List.Item icon={<Title order={4}>📊</Title>}><b>IYSE 6501</b> Intro to Analytics Modeling </List.Item>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>CSE 6748</b> Applied Analytics Practium</List.Item>
+                                            </List>
+                                        </Timeline.Item>
+                                        <Timeline.Item title="Spring 2027">
+                                            <List>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>CSE 6242</b> Data and Visual Analytics</List.Item>
+                                            </List>
+                                        </Timeline.Item>
+                                        <Timeline.Item title="Fall 2026">
+                                            <List>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>IYSE 6402</b> Time Series Analysis</List.Item>
+                                            </List>
+                                        </Timeline.Item>*/}
+                                        <Timeline.Item title="Summer 2026" bullet={<IconArrowRight />}>
+                                            <List>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>CSE 8803</b> Applied Natural Language Processing</List.Item>
+                                            </List>
+                                        </Timeline.Item>
+                                        <Timeline.Item title="Spring 2026" bullet={<IconCheck />}>
+                                            <List>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>CSE 7643</b> Deep Learning</List.Item>
+                                            </List>
+                                        </Timeline.Item>
+                                        <Timeline.Item title="Fall 2025" bullet={<IconCheck />}>
+                                            <List>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>IYSE 6740</b> Computational Data Analytics</List.Item>
+                                                <List.Item icon={<Title order={4} style={{ paddingBottom: "5px" }}>💼</Title>}><b>MGT 6203</b> Data Analytics in Business</List.Item>
+                                            </List>
+                                        </Timeline.Item>
+                                        <Timeline.Item title="Summer 2025" bullet={<IconCheck />}>
+                                            <List>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>IYSE 6644</b> Simulation and Modeling</List.Item>
+                                                <List.Item icon={<Title order={4} style={{ paddingBottom: "5px" }}>💼</Title>}><b>MGT 8803</b> Business Fundamentals for Analytics</List.Item>
+                                            </List>
+                                        </Timeline.Item>
+                                        <Timeline.Item title="Spring 2025" bullet={<IconCheck />}>
+                                            <List>
+                                                <List.Item icon={<Title order={4}>📊</Title>}><b>IYSE 6501</b> Intro to Analytics Modeling</List.Item>
                                             </List>
                                         </Timeline.Item>
 

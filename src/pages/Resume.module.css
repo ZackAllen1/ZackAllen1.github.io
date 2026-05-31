@@ -8,7 +8,7 @@
 
 .resumeInnerContainer {
     min-width: 250px;
-    width: 60%;
+    width: 65%;
 
     @media (max-width: $mantine-breakpoint-sm) {
         width: 100%;
